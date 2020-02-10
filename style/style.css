@@ -1,0 +1,62 @@
+*, html {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Sriracha', cursive;
+}
+
+.row {
+    width: 75%;
+}
+
+label {
+    font-size: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 0.4rem;
+    grid-auto-flow: dense;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1000px;
+    margin-top: 2rem;
+    list-style-type: none;
+}
+
+.grid div {
+    margin: 0%;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.grid div.one {
+    grid-column-end: span 1;
+}
+
+.grid div.two {
+    grid-column-end: span 3;
+    grid-auto-rows: span 2;
+} 
+
+.grid div.three {
+    grid-column-end: span 2;
+    grid-auto-rows: span 2;
+}
+
+.grid div.four {
+    grid-column-end: span 1;
+    grid-auto-rows: span 3;
+}
+
+
+.grid div img {
+    margin: 0%;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    width: 50%;
+    height: 50%; 
+    object-fit: cover;
+}
